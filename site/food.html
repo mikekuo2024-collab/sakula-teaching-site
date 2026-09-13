@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>115-1 食在有意思｜Sakula 教學檔案</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="course" data-course="food">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Sakula 教學檔案</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html#about">個人簡介</a>
+        <a href="index.html#courses">課程總覽</a>
+        <a href="food.html" class="active">115-1 食在有意思</a>
+        <a href="taiwanese.html">閩南語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero course-hero">
+      <div class="container">
+        <p class="hero-kicker">課程頁面</p>
+        <h1>115-1 食在有意思</h1>
+        <p class="hero-sub">115 學年度第 1 學期 · 生活實作課程 · 新竹市磐石高中</p>
+        <nav class="sub-nav">
+          <a href="#intro">課程介紹</a>
+          <a href="#materials">課程教材及PPT</a>
+          <a href="#quiz">模擬測驗</a>
+          <a href="#resources">學習資源連結</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 課程介紹 -->
+    <section id="intro" class="section">
+      <div class="container">
+        <h2>課程介紹</h2>
+        <div class="card">
+          <p>以「吃得對、做得出」為核心的餐飲實作課程。從「我的餐盤」均衡飲食觀念出發，帶領學生動手完成珍奶＋楊枝甘露、開放式三明治、炒泡麵、雪 Q 餅等主題料理，並搭配學習單記錄與反思。</p>
+          <ul>
+            <li>教學計畫、教學進度安排</li>
+            <li>主題料理 PPT 教材</li>
+            <li>學習單 01～04</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 課程教材及PPT -->
+    <section id="materials" class="section alt">
+      <div class="container">
+        <h2>課程教材及 PPT</h2>
+        <p class="note">點選檔名即可開啟或下載原始檔案（檔案位於本網站上層資料夾）；按「模擬測驗」進入該單元的測驗頁。標示「無測驗」的檔案為空白表單、純圖片或掃描檔，不出題。</p>
+        <div class="filter">
+          <label for="materialSearch">搜尋教材：</label>
+          <input type="text" id="materialSearch" placeholder="輸入關鍵字，例如：學習單、三明治">
+        </div>
+        <div id="materialList"></div>
+      </div>
+    </section>
+
+    <!-- 模擬測驗 -->
+    <section id="quiz" class="section">
+      <div class="container">
+        <h2>模擬測驗</h2>
+        <p class="note">每個學習單元各有一份 10～15 題的模擬測驗（共 <span id="quizCount">0</span> 份），題目依該單元教材內容出題。教材清單中每個檔案旁也有「模擬測驗」按鈕可直接進入。</p>
+        <div id="quizIndex" class="grid two"></div>
+      </div>
+    </section>
+
+    <!-- 學習資源連結 -->
+    <section id="resources" class="section alt">
+      <div class="container">
+        <h2>學習資源連結</h2>
+        <div id="resourceList" class="grid two"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 陳櫻枝 Sakula 教學檔案 · <a href="index.html">回首頁</a></p>
+    </div>
+  </footer>
+
+  <script src="quizzes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

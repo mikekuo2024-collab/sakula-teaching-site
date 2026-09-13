@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模擬測驗｜Sakula 教學檔案</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="quiz">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Sakula 教學檔案</a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html#about">個人簡介</a>
+        <a href="index.html#courses">課程總覽</a>
+        <a href="food.html">115-1 食在有意思</a>
+        <a href="taiwanese.html">閩南語</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero course-hero">
+      <div class="container">
+        <p class="hero-kicker">模擬測驗</p>
+        <h1 id="quizTitle">載入中…</h1>
+        <p class="hero-sub" id="quizMeta"></p>
+        <nav class="sub-nav" id="quizNav"></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="quizIntro" class="card quiz-intro">
+          <p>共 <strong id="quizTotal">0</strong> 題單選題，每題 4 個選項（選項順序每次隨機）。作答完畢按「送出」即可看到分數與每題解析；按「重新作答」可再練習一次。</p>
+        </div>
+        <form id="quizForm"></form>
+        <div class="quiz-actions" id="quizActions">
+          <button type="button" id="quizSubmit" class="btn">送出</button>
+          <button type="button" id="quizReset" class="btn secondary">重新作答</button>
+        </div>
+        <div id="quizResult" class="quiz-result" hidden></div>
+        <div id="quizError" class="card" hidden>
+          <h3>找不到這個測驗單元</h3>
+          <p>請從課程頁面的教材清單或模擬測驗清單重新點選。</p>
+          <p><a href="food.html">115-1 食在有意思</a> · <a href="taiwanese.html">閩南語</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 陳櫻枝 Sakula 教學檔案 · <a href="index.html">回首頁</a></p>
+    </div>
+  </footer>
+
+  <script src="quizzes.js"></script>
+  <script src="script.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
